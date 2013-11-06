@@ -198,8 +198,8 @@ else
 fi
 
 if [ -f $BUILD_DIR/grunt.js ] || [ -f $BUILD_DIR/Gruntfile.js ] || [ -f $BUILD_DIR/Gruntfile.coffee ]; then
-  echo "-----> Found gruntfile, running build:dist"
-  $BUILD_DIR/node_modules/grunt-cli/bin/grunt build:dist
+  echo "-----> Found gruntfile, running dist"
+  $BUILD_DIR/node_modules/grunt-cli/bin/grunt dist
 else
   echo "-----> No gruntfile (grunt.js) found"
 fi
